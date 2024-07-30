@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* : ->Pseudo-Classe
+            :: -> Pseudo-Elemento*/
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        .especial{
+            background-color: rgb(214, 98, 98);
+        }
+
+        .especial::before{
+            content: "=> ";
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+        .especial::after{
+            content: " <=";
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a rel="stylesheet" href="https://github.com/Joao-Paulo-Bortolocce">Repositório GitHubt</a></li>
+        <li><a rel="stylesheet" href="https://www.instagram.com/jpaulobortolocce/" class="especial">Instagram</a></li>
+        <li><a rel="stylesheet" href="https://www.unoeste.br/">Unoeste</a></li>
+    </ul>
+</body>
+</html>

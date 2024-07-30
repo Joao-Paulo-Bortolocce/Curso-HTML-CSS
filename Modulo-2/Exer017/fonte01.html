@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+            cm, mm, in(polegada), px, pt, pc
+            
+            Medidas relativas
+            em,ex, rem, vw, vh, %
+            
+            RECOMENDADOS PELA W3C= px e em
+            geralmente 16px = 1em
+            */
+            font-size: 1em;
+            /*
+            font-weigth => serve para colocar o peso da letra, leve até pesado, negritar
+            
+            font-style => estilizar a fonte.
+            
+            Nem todas as fontes possuel essas possibilidades e muito menos combinações entre as duas tags*/
+        }
+        
+        
+        h1{
+            /*
+            SHORTHAND FONT
+            é Possivel declarar inumeras caracteristicas de uma fonte de uma vez.
+            font-family: Arial, Helvetica, sans-serif;
+            font-weigth: bolder;
+            font-size: 1em;
+            font-style: italic;
+
+            AO INVÉS DE ESCREVER TUDO ISSO POSSO FAZER TUDO DE UMA VEZ
+
+            A ORDEM A SER SEGUIDA É
+            -font-style -> font-weigth -> font-size -> font-family;
+            */
+            font: italic bolder 3em sans-serif;
+        }
+        
+        h2{
+            font: bold 2em sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus distinctio maiores nihil, porro consequatur cupiditate eius voluptatibus voluptas eum fuga dignissimos recusandae sequi facilis quasi inventore molestiae nulla! Optio?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat saepe sint, ea neque, sapiente error provident tenetur ex reiciendis possimus corrupti quam ad in architecto tempora nobis labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem officiis est dolorem recusandae iste iusto harum, doloremque at excepturi sapiente. Ullam voluptas sapiente facilis iure exercitationem eveniet commodi sit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis tempora qui, vero dolor maiores officia autem ea a rerum ex natus explicabo corporis possimus itaque ad quisquam nam quod laboriosam.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vitae similique architecto non quisquam tempora neque odio itaque, natus sit exercitationem quo aut accusamus ab quam sapiente delectus qui explicabo!</p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!--Deve ser colocado na ordem, do menor pro maior ou vise-versa-->
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <!-- <audio src="midia/Happy Mistake - RKVC.mp3" controls autoplay></audio>
+    mp3  wav ogg  ESSA FOI UMA DAS MANEIRAS DE COLOCAR O AUDIO, EXISTE OUTRA FORMA
+    -->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+
+        <!--AQUI SEGUE A IDEIA DE ORDEM, QUANTO MAIS A CIMA O "SOURCE" ANTES SERÁ CARREGADO-->
+    </audio>
+
+
+</body>
+</html>

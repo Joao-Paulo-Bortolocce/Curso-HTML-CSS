@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em css</title>
+    <style>
+        *{ /* Edição global*/
+            height: 100%;
+        }
+        body{
+            /* primeiro parametro é a direção, POIS ESSE É LINEAR que pode ser literalmente escrito, ou representado em graus, para a direita seria 90deg */
+            /* background-image: linear-gradient(to bottom,#3198e2,#6d59c0,#b93590,#e33f5f,#b93590,#fdd579); */
+            
+            /* Esse aqui é um gradiente não linear */
+            background-image: radial-gradient(circle,#3198e2,#6d59c0,#b93590,#e33f5f,#b93590,#fdd579);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+   <h1>Testanto o gradiente</h1>
+</body>
+</html>
