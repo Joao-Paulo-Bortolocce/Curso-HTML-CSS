@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style> 
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+        div.conteiner{
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            height: 300px;
+        }
+
+        div.item{
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 50px;/*Default é "auto" ele regula o tamanho de acordo com o conteudo*/
+        }
+
+        div#id1{
+            order: 0;
+            align-self: auto; /*É o default e acompanha a config do pai, no caso (align-items: flex-end;)*/
+        }
+        
+        div#id2{
+            order:-2;
+            align-self: flex-start;
+        }
+        
+        div#id3{
+            order: 4;
+            align-self: flex-start;
+        }
+        
+        div#id4{
+            order: 8;
+            align-self: center;
+        }
+        
+        div#id5{
+            order: 2;
+            align-self: stretch;
+        }
+        
+        div#id6{
+            order: 0;
+            align-self: center;
+        }
+        
+        div#id7{
+            align-self: flex-end;
+            order: -4;
+        }
+        </style>
+</head>
+<body>
+    <h1>Relacionando os orders, align-self e flex-basis</h1>
+    <h2>Order: Designa a ordem que os filhos aparecerão</h2>
+    <h2>align-self: Posicionamento do item em relação ao pai (cros-axis)</h2>
+    <h2>flex-basis: Tamanho do filho em relação ao eixo principal(main-axis) <br> row-width, column-heigth</h2>
+    <div class="conteiner">
+        <div class="item" id="id1">A</div>
+        <div class="item" id="id2">B</div>
+        <div class="item" id="id3">C</div>
+        <div class="item" id="id4">D</div>
+        <div class="item" id="id5">E</div>
+        <div class="item" id="id6">F</div>
+        <div class="item" id="id7">G</div>
+    </div>
+</body>
+</html>

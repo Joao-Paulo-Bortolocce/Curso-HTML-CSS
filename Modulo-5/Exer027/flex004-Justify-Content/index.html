@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo justify content</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            text-decoration: underline;
+        }
+        div.conteiner{
+            background-color: aqua;
+            display: flex;
+            border: 5px solid rgb(38, 0, 255);
+            padding: 20px 0px;
+            width: 90vw;
+            height: 200px;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        div.item{
+            background-color: lightcoral;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        div.conteiner2{
+            background-color: aqua;
+            display: flex;
+            border: 5px solid rgb(38, 0, 255);
+            width: 90vw;
+            height: 200px;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        div.item2{
+            background-color: lightcoral;
+            border: 1px solid black;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content: flex-start;</h1>
+    <h2><em>Filhos colados no inicio do main-axis</em></h2>
+    <div class="conteiner" style="justify-content: flex-start;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: flex-end;</h1>
+    <h2><em>Filhos colados no fim do main-axis</em></h2>
+    <div class="conteiner" style="justify-content: flex-end;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: center;</h1>
+    <h2><em>Filhos colados no meio do main-axis</em></h2>
+    <div class="conteiner" style="justify-content:center;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-between;</h1>
+    <h2><em>Filhos colados nas extremidades do main-axis <br> e o espaçamento entre eles é dividido igualmente</em></h2>
+    <div class="conteiner" style="justify-content: space-between;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-evenly;</h1>
+    <h2><em>Espaçamento entre os filhos e a borda são iguais</em></h2>
+    <div class="conteiner" style="justify-content: space-evenly;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>justify-content: space-around;</h1>
+    <h2><em>Divide o container na quantidade de filhos e o espaço de cada um é igual, <br> os filhos são centralizados nesses espaços</em></h2>
+    <div class="conteiner" style="justify-content: space-around;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-itens: stretch</h1>
+    <h2><em>É originalmente colocado por default, mas ele alinha o tamanho dos filhos, ocupa o tamanho todo do Cros-axis</em></h2>
+    <div class="conteiner2" style="align-items: stretch;">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>align-itens: flex-start</h1>
+    <h2><em>Cola no inicio do cros-axis</em></h2>
+    <div class="conteiner2" style="align-items: flex-start;">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>align-itens: flex-end</h1>
+    <h2><em>Cola no fim do cros-axis</em></h2>
+    <div class="conteiner2" style="align-items: flex-end;">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>align-itens: center</h1>
+    <h2><em>Cola no centro do cros-axis</em></h2>
+    <div class="conteiner2" style="align-items: center;">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h1>Align-content</h1>
+    <h2><em>Alinhamento no eixo transversal(crox-axis) quando há uma quebra <br>
+    Possui as mesmas propriedades e funcionamentos do "justify-content"!!</em></h2>
+</body>
+</html>
